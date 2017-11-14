@@ -21,16 +21,16 @@ class Mailer
         $content = isset($param['content']) ? $param['content'] : '';
 
         //构建发送对象
-        $this->transport = (new Swift_SmtpTransport('smtp.qq.com', 25))
+        $this->transport = (new \Swift_SmtpTransport('smtp.qq.com', 25))
         ->setEncryption('tls')
         ->setUsername('2439517098')
         ->setPassword('cvkrgyquuxftdhjc');
 
         //初始化
-        $this->mailer = new Swift_Mailer($this->transport);
+        $this->mailer = new \Swift_Mailer($this->transport);
 
         //构建消息
-        $message = (new Swift_Message($subject))
+        $message = (new \Swift_Message($subject))
         ->setFrom(array('2439517098@qq.com' => 'Allen'))
         ->setTo($to)
         ->setBody($content);
