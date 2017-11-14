@@ -1,0 +1,21 @@
+{
+    "name": "yiifloruit/yii2-swoole",
+    "description": "Yii2 Swoole",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "AllenSun",
+            "email": "sunyujiebj@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiifloruit\\swoole\\": ""
+        }
+    }
+}
