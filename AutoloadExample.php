@@ -11,4 +11,9 @@ class AutoloadExample extends \yii\base\Widget
     {
         return "Hello!";
     }
+    
+    public function Test()
+    {
+        return "Test!";
+    }
 }
